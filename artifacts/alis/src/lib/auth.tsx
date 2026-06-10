@@ -6,8 +6,8 @@ interface AuthContextType {
   user: User | null;
   token: string | null;
   isLoading: boolean;
-  login: (data: LoginInput) => Promise<void>;
-  register: (data: RegisterInput) => Promise<void>;
+  login: (data: LoginInput) => Promise<User>;
+  register: (data: RegisterInput) => Promise<User>;
   logout: () => Promise<void>;
 }
 
@@ -39,18 +39,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   }, [currentUser, error]);
 
-  const login = async (data: LoginInput) => {
+  const login = async (data: LoginInput): Promise<User> => {
     const res = await loginMutation.mutateAsync({ data });
-    setToken(res.token);
-    setUser(res.user);
     localStorage.setItem("alis_token", res.token);
+    setToken(res.token);
+    setUser(res.user as User);
+    return res.user as User;
   };
 
-  const register = async (data: RegisterInput) => {
+  const register = async (data: RegisterInput): Promise<User> => {
     const res = await registerMutation.mutateAsync({ data });
-    setToken(res.token);
-    setUser(res.user);
     localStorage.setItem("alis_token", res.token);
+    setToken(res.token);
+    setUser(res.user as User);
+    return res.user as User;
   };
 
   const logout = async () => {

@@ -34,11 +34,11 @@ export default function RegisterPage() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       setError("");
-      await register({
+      const registeredUser = await register({
         ...values,
         parentEmail: values.role === RegisterInputRole.student && values.parentEmail ? values.parentEmail : undefined
       });
-      setLocation("/");
+      setLocation(`/${registeredUser.role}`);
     } catch (err: any) {
       setError(err.message || "Failed to register");
     }
