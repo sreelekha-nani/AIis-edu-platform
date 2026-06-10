@@ -1,0 +1,2 @@
+- [API call patterns](api-call-patterns.md) — correct mutation/query signatures for all major hooks; many wrong patterns exist in older code
+- [Admin user management](admin-user-management.md) — useDeleteUser/useUpdateUser(role) now exist after OpenAPI spec update + codegen

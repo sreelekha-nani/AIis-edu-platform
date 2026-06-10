@@ -5,6 +5,7 @@
  * ALIS – Adaptive Learning Intelligence System API
  * OpenAPI spec version: 0.1.0
  */
+import type { UserUpdateRole } from './userUpdateRole';
 
 export interface UserUpdate {
   name?: string;
@@ -12,4 +13,5 @@ export interface UserUpdate {
   subject?: string;
   grade?: string;
   avatar?: string;
+  role?: UserUpdateRole;
 }

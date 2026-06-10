@@ -66,12 +66,23 @@ export interface AuthResponse {
   token: string;
 }
 
+export type UserUpdateRole = typeof UserUpdateRole[keyof typeof UserUpdateRole];
+
+
+export const UserUpdateRole = {
+  student: 'student',
+  teacher: 'teacher',
+  parent: 'parent',
+  admin: 'admin',
+} as const;
+
 export interface UserUpdate {
   name?: string;
   bio?: string;
   subject?: string;
   grade?: string;
   avatar?: string;
+  role?: UserUpdateRole;
 }
 
 export interface Course {
