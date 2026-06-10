@@ -175,6 +175,19 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/User"
+    delete:
+      operationId: deleteUser
+      tags: [users]
+      summary: Delete user (admin)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: User deleted
 
   /users/{id}/children:
     get:
@@ -903,6 +916,9 @@ components:
           type: string
         avatar:
           type: string
+        role:
+          type: string
+          enum: [student, teacher, parent, admin]
 
     Course:
       type: object

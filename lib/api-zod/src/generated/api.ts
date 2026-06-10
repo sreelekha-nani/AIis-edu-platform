@@ -126,7 +126,8 @@ export const UpdateUserBody = zod.object({
   "bio": zod.string().optional(),
   "subject": zod.string().optional(),
   "grade": zod.string().optional(),
-  "avatar": zod.string().optional()
+  "avatar": zod.string().optional(),
+  "role": zod.enum(['student', 'teacher', 'parent', 'admin']).optional()
 })
 
 export const UpdateUserResponse = zod.object({
@@ -140,6 +141,14 @@ export const UpdateUserResponse = zod.object({
   "grade": zod.string().nullish(),
   "parentId": zod.number().nullish(),
   "createdAt": zod.string()
+})
+
+
+/**
+ * @summary Delete user (admin)
+ */
+export const DeleteUserParams = zod.object({
+  "id": zod.coerce.number()
 })
 
 

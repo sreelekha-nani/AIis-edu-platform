@@ -63,3 +63,4 @@ export * from './testSubmission';
 export * from './user';
 export * from './userRole';
 export * from './userUpdate';
+export * from './userUpdateRole';
