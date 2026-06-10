@@ -24,8 +24,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const { data: currentUser, isLoading, error } = useGetCurrentUser({
     query: {
       enabled: !!token,
-      retry: false
-    }
+      retry: false,
+    } as any
   });
 
   useEffect(() => {
