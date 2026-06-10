@@ -27,8 +27,8 @@ export default function LoginPage() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       setError("");
-      await login(values);
-      setLocation("/");
+      const loggedInUser = await login(values);
+      setLocation(`/${loggedInUser.role}`);
     } catch (err: any) {
       setError(err.message || "Failed to login");
     }
