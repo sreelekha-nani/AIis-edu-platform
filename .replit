@@ -29,7 +29,7 @@ outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "PORT=8080 BASE_PATH=/ pnpm --filter alis run dev"
+args = "PORT=8080 BASE_PATH=/ pnpm --filter @workspace/alis run dev"
 waitForPort = 8080
 
 [agent]
