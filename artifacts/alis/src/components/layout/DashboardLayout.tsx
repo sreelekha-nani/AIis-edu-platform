@@ -59,7 +59,7 @@ function NavLinks({ role, location, onClick }: { role: Role; location: string; o
             className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
               active
                 ? "bg-primary text-primary-foreground shadow-sm"
-                : "text-white/70 hover:bg-white/10 hover:text-white"
+                : "text-white/90 hover:bg-white/10 hover:text-white"
             }`}
           >
             <Icon className="w-4 h-4 shrink-0" />
@@ -87,7 +87,7 @@ export function DashboardLayout({ children, role }: { children: React.ReactNode;
           <BrainCircuit className="text-primary w-7 h-7" />
           ALIS
         </div>
-        <p className="text-white/50 text-xs font-medium uppercase tracking-widest mt-1">
+        <p className="text-white/70 text-xs font-medium uppercase tracking-widest mt-1">
           {roleLabel} Portal
         </p>
       </div>
@@ -97,7 +97,7 @@ export function DashboardLayout({ children, role }: { children: React.ReactNode;
         <Link
           href="/"
           onClick={onLinkClick}
-          className="flex items-center gap-3 px-3 py-2 rounded-lg text-xs font-medium text-white/40 hover:text-white/70 hover:bg-white/5 transition-colors"
+          className="flex items-center gap-3 px-3 py-2 rounded-lg text-xs font-medium text-white/65 hover:text-white hover:bg-white/10 transition-colors"
         >
           <Home className="w-3.5 h-3.5" />
           Back to Home
@@ -121,13 +121,13 @@ export function DashboardLayout({ children, role }: { children: React.ReactNode;
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium text-white truncate">{user?.name}</p>
-            <p className="text-xs text-white/40 truncate">{user?.email}</p>
+            <p className="text-xs text-white/65 truncate">{user?.email}</p>
           </div>
         </div>
         <Button
           variant="ghost"
           size="sm"
-          className="w-full justify-start text-white/50 hover:text-white hover:bg-white/10 gap-2 text-xs"
+          className="w-full justify-start text-white/75 hover:text-white hover:bg-white/10 gap-2 text-xs"
           onClick={() => logout()}
         >
           <LogOut className="w-3.5 h-3.5" />

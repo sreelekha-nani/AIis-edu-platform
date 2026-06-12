@@ -15,11 +15,7 @@ function CourseAnalyticsCard({ courseId, title }: { courseId: number; title: str
     <Card>
       <CardContent className="p-4">
         <p className="font-medium text-sm mb-1">{title}</p>
-<<<<<<< HEAD
         <div className="h-4 bg-muted rounded animate-pulse w-2/3" />
-=======
-        <div className="h-4 bg-gray-100 rounded animate-pulse w-2/3" />
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
       </CardContent>
     </Card>
   );
@@ -93,11 +89,7 @@ export default function TeacherAnalytics() {
           ].map(s => (
             <Card key={s.label}>
               <CardContent className="p-4 flex items-center gap-3">
-<<<<<<< HEAD
                 <div className={`w-9 h-9 rounded-lg bg-muted flex items-center justify-center ${s.color}`}>
-=======
-                <div className={`w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center ${s.color}`}>
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                   <s.icon className="w-4.5 h-4.5" />
                 </div>
                 <div>

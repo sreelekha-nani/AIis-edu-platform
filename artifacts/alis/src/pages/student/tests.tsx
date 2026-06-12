@@ -51,24 +51,15 @@ function TestRunner({ testId, studentId, onBack }: { testId: number; studentId: 
         </Button>
         <Card>
           <CardHeader className="text-center pb-2">
-<<<<<<< HEAD
             <div className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 ${passed ? "bg-green-500/10" : "bg-destructive/10"}`}>
               {passed ? <CheckCircle2 className="w-10 h-10 text-green-600" /> : <XCircle className="w-10 h-10 text-destructive" />}
-=======
-            <div className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 ${passed ? "bg-green-100" : "bg-red-100"}`}>
-              {passed ? <CheckCircle2 className="w-10 h-10 text-green-600" /> : <XCircle className="w-10 h-10 text-red-600" />}
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
             </div>
             <CardTitle className="text-2xl">{passed ? "Well Done!" : "Keep Practicing"}</CardTitle>
             <p className="text-muted-foreground text-sm">{test.title}</p>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="text-center">
-<<<<<<< HEAD
               <div className={`text-5xl font-bold mb-1 ${passed ? "text-green-600" : "text-destructive"}`}>{pct}%</div>
-=======
-              <div className={`text-5xl font-bold mb-1 ${passed ? "text-green-600" : "text-red-600"}`}>{pct}%</div>
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
               <p className="text-sm text-muted-foreground">{result.correctAnswers} of {result.totalQuestions} correct</p>
             </div>
             <Progress value={pct} className="h-3" />
@@ -78,21 +69,12 @@ function TestRunner({ testId, studentId, onBack }: { testId: number; studentId: 
                 const correct = q.correctOption;
                 const isRight = selected === correct;
                 return (
-<<<<<<< HEAD
                   <div key={q.id} className={`p-3 rounded-lg border ${isRight ? "border-green-500/20 bg-green-500/5" : "border-destructive/20 bg-destructive/5"}`}>
                     <div className="flex items-start gap-2">
                       {isRight ? <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 shrink-0" /> : <XCircle className="w-4 h-4 text-destructive mt-0.5 shrink-0" />}
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium mb-1">{i + 1}. {q.text}</p>
                         <p className="text-xs text-muted-foreground">Your answer: <span className={isRight ? "text-green-600 font-medium" : "text-destructive font-medium"}>{q.options[selected]}</span></p>
-=======
-                  <div key={q.id} className={`p-3 rounded-lg border ${isRight ? "border-green-200 bg-green-50" : "border-red-200 bg-red-50"}`}>
-                    <div className="flex items-start gap-2">
-                      {isRight ? <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 shrink-0" /> : <XCircle className="w-4 h-4 text-red-600 mt-0.5 shrink-0" />}
-                      <div className="flex-1 min-w-0">
-                        <p className="text-sm font-medium mb-1">{i + 1}. {q.text}</p>
-                        <p className="text-xs text-muted-foreground">Your answer: <span className={isRight ? "text-green-600 font-medium" : "text-red-600 font-medium"}>{q.options[selected]}</span></p>
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                         {!isRight && <p className="text-xs text-muted-foreground">Correct: <span className="text-green-600 font-medium">{q.options[correct]}</span></p>}
                         {q.explanation && <p className="text-xs text-blue-600 mt-1 italic">{q.explanation}</p>}
                       </div>
@@ -147,17 +129,10 @@ function TestRunner({ testId, studentId, onBack }: { testId: number; studentId: 
                     className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg border text-sm text-left transition-all ${
                       answers[q.id] === oi
                         ? "border-primary bg-primary/5 text-primary font-medium"
-<<<<<<< HEAD
                         : "border-border hover:border-primary/40 hover:bg-accent"
                     }`}
                   >
                     <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 ${answers[q.id] === oi ? "border-primary bg-primary" : "border-muted-foreground/30"}`}>
-=======
-                        : "border-border hover:border-primary/40 hover:bg-gray-50"
-                    }`}
-                  >
-                    <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 ${answers[q.id] === oi ? "border-primary bg-primary" : "border-gray-300"}`}>
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                       {answers[q.id] === oi && <span className="w-2 h-2 rounded-full bg-white" />}
                     </span>
                     {opt}
@@ -167,11 +142,7 @@ function TestRunner({ testId, studentId, onBack }: { testId: number; studentId: 
             </div>
           ))}
           {answered < total && (
-<<<<<<< HEAD
             <div className="flex items-center gap-2 p-3 bg-yellow-500/10 border border-yellow-500/20 rounded-lg text-sm text-yellow-600">
-=======
-            <div className="flex items-center gap-2 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-700">
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
               <AlertCircle className="w-4 h-4 shrink-0" />
               {total - answered} question{total - answered !== 1 ? "s" : ""} remaining
             </div>
@@ -211,11 +182,7 @@ export default function StudentTests() {
           <p className="text-muted-foreground text-sm mt-1">Test your knowledge and track your progress</p>
         </div>
         {isLoading ? (
-<<<<<<< HEAD
           <div className="space-y-3">{[...Array(4)].map((_, i) => <div key={i} className="h-20 bg-muted rounded-xl animate-pulse" />)}</div>
-=======
-          <div className="space-y-3">{[...Array(4)].map((_, i) => <div key={i} className="h-20 bg-gray-100 rounded-xl animate-pulse" />)}</div>
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
         ) : (
           <div className="space-y-3">
             {(tests ?? []).map(test => {
@@ -231,11 +198,7 @@ export default function StudentTests() {
                         <div className="flex items-center gap-2 mb-1">
                           <h3 className="font-semibold text-sm">{test.title}</h3>
                           <Badge variant="secondary" className="text-xs">{test.subject}</Badge>
-<<<<<<< HEAD
                           {taken && <Badge className="bg-green-500/10 text-green-600 text-xs border-0">Completed</Badge>}
-=======
-                          {taken && <Badge className="bg-green-100 text-green-700 text-xs border-0">Completed</Badge>}
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                         </div>
                         <div className="flex items-center gap-3 text-xs text-muted-foreground">
                           <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{test.duration} min</span>

@@ -116,11 +116,7 @@ export default function LandingPage() {
             <BrainCircuit className="w-6 h-6 text-primary" />
             ALIS
           </div>
-<<<<<<< HEAD
           <div className="text-sm text-sidebar-foreground/60">
-=======
-          <div className="text-sm text-sidebar-accent-foreground">
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
             © {new Date().getFullYear()} Adaptive Learning Intelligence System.
           </div>
         </div>

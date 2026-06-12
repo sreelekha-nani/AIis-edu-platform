@@ -22,15 +22,9 @@ function formatTime(dt: string) {
 }
 
 const STATUS_BADGE: Record<string, string> = {
-<<<<<<< HEAD
   upcoming: "bg-blue-500/10 text-blue-600",
   live: "bg-green-500/10 text-green-600",
   completed: "bg-muted text-muted-foreground",
-=======
-  upcoming: "bg-blue-100 text-blue-700",
-  live: "bg-green-100 text-green-700",
-  completed: "bg-gray-100 text-gray-600",
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
 };
 
 export default function TeacherLiveClasses() {
@@ -105,11 +99,7 @@ export default function TeacherLiveClasses() {
         )}
 
         {isLoading ? (
-<<<<<<< HEAD
           <div className="space-y-3">{[...Array(3)].map((_, i) => <div key={i} className="h-20 bg-muted rounded-xl animate-pulse" />)}</div>
-=======
-          <div className="space-y-3">{[...Array(3)].map((_, i) => <div key={i} className="h-20 bg-gray-100 rounded-xl animate-pulse" />)}</div>
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
         ) : (
           <>
             {upcoming.length > 0 && (
@@ -141,11 +131,7 @@ export default function TeacherLiveClasses() {
                               <ExternalLink className="w-3.5 h-3.5" /> Start
                             </a>
                           </Button>
-<<<<<<< HEAD
                           <Button size="icon" variant="ghost" className="w-8 h-8 text-red-500 hover:bg-destructive/10"
-=======
-                          <Button size="icon" variant="ghost" className="w-8 h-8 text-red-500 hover:bg-red-50"
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                             onClick={() => deleteClass.mutate({ id: cls.id }, { onSuccess: () => qc.invalidateQueries() })}>
                             <Trash2 className="w-4 h-4" />
                           </Button>
@@ -163,20 +149,12 @@ export default function TeacherLiveClasses() {
                   {past.map(cls => (
                     <Card key={cls.id} className="opacity-60">
                       <CardContent className="p-3 flex items-center gap-3">
-<<<<<<< HEAD
                         <Video className="w-4 h-4 text-muted-foreground/80 shrink-0" />
-=======
-                        <Video className="w-4 h-4 text-gray-400 shrink-0" />
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                         <div className="flex-1 min-w-0">
                           <span className="text-sm font-medium">{cls.title}</span>
                           <span className="text-xs text-muted-foreground ml-2">{formatDate(cls.scheduledAt)}</span>
                         </div>
-<<<<<<< HEAD
                         <Badge className="text-xs bg-muted text-muted-foreground border-0">Completed</Badge>
-=======
-                        <Badge className="text-xs bg-gray-100 text-gray-500 border-0">Completed</Badge>
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                       </CardContent>
                     </Card>
                   ))}
@@ -184,11 +162,7 @@ export default function TeacherLiveClasses() {
               </div>
             )}
             {upcoming.length === 0 && past.length === 0 && (
-<<<<<<< HEAD
               <Card><CardContent className="py-16 text-center"><Video className="w-12 h-12 text-muted-foreground/40 mx-auto mb-3" /><p className="text-muted-foreground text-sm">No classes scheduled yet.</p></CardContent></Card>
-=======
-              <Card><CardContent className="py-16 text-center"><Video className="w-12 h-12 text-gray-300 mx-auto mb-3" /><p className="text-muted-foreground text-sm">No classes scheduled yet.</p></CardContent></Card>
->>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
             )}
           </>
         )}
