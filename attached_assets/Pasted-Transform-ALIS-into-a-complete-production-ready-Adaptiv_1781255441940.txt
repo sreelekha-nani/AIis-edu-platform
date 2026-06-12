@@ -1,0 +1,362 @@
+Transform ALIS into a complete production-ready Adaptive Learning Intelligence System (ALIS).
+
+OBJECTIVE:
+Build a fully functional adaptive learning platform for Students, Teachers, Parents, and Administrators.
+
+The platform must not contain empty pages, empty dashboards, empty tables, or placeholder content.
+
+==================================================
+USER ROLES
+==================================================
+
+1. Student
+2. Teacher
+3. Parent
+4. Admin
+
+All roles must have fully functional dashboards with meaningful data.
+
+==================================================
+STUDENT DASHBOARD
+==================================================
+
+Create a modern learning experience.
+
+Features:
+
+1. Course Search
+- Search courses by name
+- Search courses by keywords
+- Search by subject
+- Search by category
+- Search by skill
+
+2. Course Filters
+- Beginner
+- Intermediate
+- Advanced
+
+3. Course Categories
+- Python Programming
+- Data Science
+- Artificial Intelligence
+- Machine Learning
+- DBMS
+- Web Development
+- Java Programming
+- Mathematics
+- Physics
+- Chemistry
+- Biology
+- English Communication
+
+4. Course Structure
+
+Each course must contain:
+
+- Course title
+- Description
+- Difficulty level
+- Instructor
+- Duration
+- Modules
+- Lessons
+- Learning outcomes
+- Assignments
+- Assessments
+- Resources
+
+5. YouTube Integration
+
+For every course:
+
+Embed relevant educational YouTube videos.
+
+Examples:
+
+Python -> Python tutorials
+DBMS -> DBMS tutorials
+AI -> Artificial Intelligence tutorials
+Data Science -> Data Science tutorials
+
+Requirements:
+
+- Embedded video player
+- Video playlist
+- Recommended videos
+- Related learning resources
+
+6. Student Interactions
+
+Students should be able to:
+
+- Like courses
+- Bookmark courses
+- Comment on lessons
+- Ask doubts
+- Reply to discussions
+- Rate courses
+- Participate in discussions
+- View community activity
+
+7. Adaptive Learning
+
+Support:
+
+- Beginner learners
+- Intermediate learners
+- Advanced learners
+
+The system should recommend different content depending on learner level.
+
+8. AI Recommendations
+
+Generate recommendations based on:
+
+- Learning history
+- Assessment scores
+- Completed courses
+- Weak topics
+- Interests
+
+Recommend:
+
+- Courses
+- Videos
+- Assignments
+- Assessments
+- Learning paths
+
+9. Assessments
+
+Create:
+
+- Topic quizzes
+- Mock tests
+- Practice tests
+- Adaptive tests
+
+Include:
+
+- MCQs
+- Scores
+- Results
+- Feedback
+
+10. Analytics
+
+Display:
+
+- Progress percentage
+- Study hours
+- Completion rate
+- Strong topics
+- Weak topics
+- Learning trends
+
+==================================================
+TEACHER DASHBOARD
+==================================================
+
+Features:
+
+- Create courses
+- Edit courses
+- Upload resources
+- Add YouTube videos
+- Create assessments
+- Create assignments
+- View student performance
+- View analytics
+- Manage discussions
+- Manage course content
+
+==================================================
+PARENT DASHBOARD
+==================================================
+
+Features:
+
+- Child learning progress
+- Assessment performance
+- Attendance
+- Study activity
+- Weekly reports
+- Monthly reports
+- Learning analytics
+- Recommendations
+
+==================================================
+ADMIN DASHBOARD
+==================================================
+
+Features:
+
+- User Management
+- Student Management
+- Teacher Management
+- Parent Management
+- Course Management
+- Assessment Management
+- Reports
+- Analytics
+- Platform Statistics
+- System Monitoring
+
+==================================================
+DISCUSSION FORUM
+==================================================
+
+Create a complete discussion system.
+
+Students can:
+
+- Ask questions
+- Reply to questions
+- Like answers
+- View discussions
+
+Teachers can:
+
+- Answer questions
+- Moderate discussions
+
+==================================================
+LIVE CLASSES
+==================================================
+
+Create live classes section.
+
+Include:
+
+- Upcoming classes
+- Recorded classes
+- Join links
+- Teacher details
+- Schedule
+
+==================================================
+COURSE CONTENT
+==================================================
+
+Generate realistic course data.
+
+Each course should contain:
+
+- 10+ lessons
+- Notes
+- Resources
+- Videos
+- Assignments
+- Quizzes
+
+==================================================
+DEMO DATA
+==================================================
+
+Seed realistic demo data.
+
+Create:
+
+Students:
+- 20 students
+
+Teachers:
+- 5 teachers
+
+Parents:
+- 10 parents
+
+Admins:
+- 1 admin
+
+Courses:
+- 12 courses
+
+Assessments:
+- 20 assessments
+
+Assignments:
+- 30 assignments
+
+Live Classes:
+- 10 classes
+
+Discussion Posts:
+- 50 posts
+
+Comments:
+- 100 comments
+
+Ratings:
+- 50 ratings
+
+Bookmarks:
+- Sample student bookmarks
+
+Progress Records:
+- Course progress data
+
+Analytics Data:
+- Learning metrics
+- Charts
+- Reports
+
+==================================================
+UI IMPROVEMENTS
+==================================================
+
+Fix all visibility issues.
+
+Requirements:
+
+- Sidebar items visible
+- Proper contrast
+- Responsive design
+- Mobile friendly
+- Tablet friendly
+- Desktop friendly
+
+All dashboard navigation items must be clearly visible without needing to click them.
+
+==================================================
+AUTHENTICATION
+==================================================
+
+Verify:
+
+- Student Login
+- Teacher Login
+- Parent Login
+- Admin Login
+
+Registration and Login must work correctly.
+
+Fix all HTTP 404 authentication errors.
+
+==================================================
+FINAL VALIDATION
+==================================================
+
+Before completion:
+
+1. Run application.
+2. Fix all build errors.
+3. Fix all runtime errors.
+4. Fix all API errors.
+5. Fix all authentication errors.
+6. Verify all dashboards.
+7. Verify all routes.
+8. Verify YouTube integration.
+9. Verify discussion system.
+10. Verify analytics.
+11. Verify adaptive learning recommendations.
+12. Verify all pages display meaningful content.
+13. Ensure no page is empty.
+14. Commit all changes.
+
+Provide:
+- Modified files list
+- Seeded data summary
+- Demo credentials
+- Verification report

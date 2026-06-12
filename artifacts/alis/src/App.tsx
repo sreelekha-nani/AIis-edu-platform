@@ -15,6 +15,7 @@ import StudentTests from "@/pages/student/tests";
 import StudentResults from "@/pages/student/test-results";
 import StudentLiveClasses from "@/pages/student/live-classes";
 import StudentDiscussions from "@/pages/student/discussions";
+import StudentAssignments from "@/pages/student/assignments";
 
 import TeacherDashboard from "@/pages/teacher";
 import TeacherCourses from "@/pages/teacher/courses";
@@ -53,6 +54,7 @@ function Router() {
       <Route path="/student/results" component={() => <StudentRoute component={StudentResults} />} />
       <Route path="/student/live-classes" component={() => <StudentRoute component={StudentLiveClasses} />} />
       <Route path="/student/discussions" component={() => <StudentRoute component={StudentDiscussions} />} />
+      <Route path="/student/assignments" component={() => <StudentRoute component={StudentAssignments} />} />
 
       {/* Teacher */}
       <Route path="/teacher" component={() => <TeacherRoute component={TeacherDashboard} />} />

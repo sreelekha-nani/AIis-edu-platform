@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import {
   LogOut, BookOpen, User, Book, GraduationCap, PenTool,
   LayoutDashboard, BrainCircuit, PlaySquare, LineChart,
-  Home, Menu, X, ChevronRight
+  Home, Menu, X, ChevronRight, ClipboardList
 } from "lucide-react";
 
 type Role = "student" | "teacher" | "parent" | "admin";
@@ -18,6 +18,7 @@ function getLinks(role: Role) {
       { href: "/student/courses", label: "My Courses", icon: Book },
       { href: "/student/tests", label: "Assessments", icon: PenTool },
       { href: "/student/results", label: "Results", icon: GraduationCap },
+      { href: "/student/assignments", label: "Assignments", icon: ClipboardList },
       { href: "/student/live-classes", label: "Live Classes", icon: PlaySquare },
       { href: "/student/discussions", label: "Discussions", icon: BookOpen },
     ];
