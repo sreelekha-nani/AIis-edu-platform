@@ -107,17 +107,28 @@ export default function TeacherTests() {
                   </Button>
                 </div>
                 {questions.map((q, qi) => (
+<<<<<<< HEAD
                   <div key={qi} className="border rounded-lg p-4 space-y-3 bg-muted/30">
+=======
+                  <div key={qi} className="border rounded-lg p-4 space-y-3 bg-gray-50/50">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                     <div className="flex items-center gap-2">
                       <span className="w-6 h-6 rounded-full bg-primary/10 text-primary text-xs font-bold flex items-center justify-center shrink-0">{qi + 1}</span>
                       <Input
                         placeholder="Question text"
                         value={q.text}
                         onChange={e => setQ(qi, "text", e.target.value)}
+<<<<<<< HEAD
                         className="flex-1 bg-background"
                       />
                       {questions.length > 1 && (
                         <Button size="icon" variant="ghost" className="w-7 h-7 text-destructive"
+=======
+                        className="flex-1 bg-white"
+                      />
+                      {questions.length > 1 && (
+                        <Button size="icon" variant="ghost" className="w-7 h-7 text-red-500"
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                           onClick={() => setQuestions(prev => prev.filter((_, i) => i !== qi))}>
                           <Trash2 className="w-3.5 h-3.5" />
                         </Button>
@@ -125,10 +136,17 @@ export default function TeacherTests() {
                     </div>
                     <div className="grid grid-cols-2 gap-2 ml-8">
                       {q.options.map((opt, oi) => (
+<<<<<<< HEAD
                         <div key={oi} className={`flex items-center gap-2 border rounded-lg px-3 py-1.5 bg-background ${q.correctOption === oi ? "border-green-400 bg-green-500/5" : ""}`}>
                           <button
                             onClick={() => setQ(qi, "correctOption", oi)}
                             className={`w-4 h-4 rounded-full border-2 shrink-0 flex items-center justify-center ${q.correctOption === oi ? "border-green-500 bg-green-500" : "border-border"}`}
+=======
+                        <div key={oi} className={`flex items-center gap-2 border rounded-lg px-3 py-1.5 bg-white ${q.correctOption === oi ? "border-green-400 bg-green-50" : ""}`}>
+                          <button
+                            onClick={() => setQ(qi, "correctOption", oi)}
+                            className={`w-4 h-4 rounded-full border-2 shrink-0 flex items-center justify-center ${q.correctOption === oi ? "border-green-500 bg-green-500" : "border-gray-300"}`}
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                           >
                             {q.correctOption === oi && <span className="w-1.5 h-1.5 rounded-full bg-white" />}
                           </button>
@@ -136,7 +154,11 @@ export default function TeacherTests() {
                             placeholder={`Option ${oi + 1}`}
                             value={opt}
                             onChange={e => setOpt(qi, oi, e.target.value)}
+<<<<<<< HEAD
                             className="border-0 shadow-none p-0 h-auto text-sm focus-visible:ring-0 bg-transparent"
+=======
+                            className="border-0 shadow-none p-0 h-auto text-sm focus-visible:ring-0"
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                           />
                         </div>
                       ))}
@@ -145,7 +167,11 @@ export default function TeacherTests() {
                       placeholder="Explanation (optional)"
                       value={q.explanation}
                       onChange={e => setQ(qi, "explanation", e.target.value)}
+<<<<<<< HEAD
                       className="ml-8 text-xs bg-background"
+=======
+                      className="ml-8 text-xs bg-white"
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                     />
                   </div>
                 ))}
@@ -159,9 +185,15 @@ export default function TeacherTests() {
         )}
 
         {isLoading ? (
+<<<<<<< HEAD
           <div className="space-y-3">{[...Array(3)].map((_, i) => <div key={i} className="h-20 bg-muted rounded-xl animate-pulse" />)}</div>
         ) : (tests ?? []).length === 0 ? (
           <Card><CardContent className="py-16 text-center"><PenTool className="w-12 h-12 text-muted mx-auto mb-3" /><p className="text-muted-foreground text-sm">No tests yet.</p></CardContent></Card>
+=======
+          <div className="space-y-3">{[...Array(3)].map((_, i) => <div key={i} className="h-20 bg-gray-100 rounded-xl animate-pulse" />)}</div>
+        ) : (tests ?? []).length === 0 ? (
+          <Card><CardContent className="py-16 text-center"><PenTool className="w-12 h-12 text-gray-300 mx-auto mb-3" /><p className="text-muted-foreground text-sm">No tests yet.</p></CardContent></Card>
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
         ) : (
           <div className="space-y-3">
             {(tests ?? []).map(test => {

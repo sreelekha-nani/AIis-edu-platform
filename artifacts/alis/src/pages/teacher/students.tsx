@@ -92,7 +92,11 @@ export default function TeacherStudents() {
         </div>
 
         {isLoading ? (
+<<<<<<< HEAD
           <div className="space-y-3">{[...Array(5)].map((_, i) => <div key={i} className="h-16 bg-muted rounded-xl animate-pulse" />)}</div>
+=======
+          <div className="space-y-3">{[...Array(5)].map((_, i) => <div key={i} className="h-16 bg-gray-100 rounded-xl animate-pulse" />)}</div>
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
         ) : filtered.length === 0 ? (
           <Card><CardContent className="py-16 text-center"><User className="w-12 h-12 text-gray-300 mx-auto mb-3" /><p className="text-muted-foreground text-sm">No students found</p></CardContent></Card>
         ) : (

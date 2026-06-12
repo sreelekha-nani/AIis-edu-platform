@@ -84,10 +84,17 @@ export default function TeacherDashboard() {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
+<<<<<<< HEAD
             { label: "My Courses", value: courses?.length ?? 0, icon: Book, color: "text-blue-500", bg: "bg-blue-500/10" },
             { label: "Total Students", value: totalEnrolled, icon: Users, color: "text-green-500", bg: "bg-green-500/10" },
             { label: "My Tests", value: tests?.length ?? 0, icon: PenTool, color: "text-purple-500", bg: "bg-purple-500/10" },
             { label: "Live Classes", value: liveClasses?.length ?? 0, icon: PlaySquare, color: "text-amber-500", bg: "bg-amber-500/10" },
+=======
+            { label: "My Courses", value: courses?.length ?? 0, icon: Book, color: "text-blue-500", bg: "bg-blue-50" },
+            { label: "Total Students", value: totalEnrolled, icon: Users, color: "text-green-500", bg: "bg-green-50" },
+            { label: "My Tests", value: tests?.length ?? 0, icon: PenTool, color: "text-purple-500", bg: "bg-purple-50" },
+            { label: "Live Classes", value: liveClasses?.length ?? 0, icon: PlaySquare, color: "text-amber-500", bg: "bg-amber-50" },
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
           ].map((s) => (
             <Card key={s.label} className="border-0 shadow-sm">
               <CardContent className="p-4 flex items-center gap-3">

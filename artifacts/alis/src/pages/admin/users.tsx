@@ -14,10 +14,17 @@ import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 
 const ROLE_CONFIG: Record<string, { label: string; color: string; icon: any }> = {
+<<<<<<< HEAD
   admin:   { label: "Admin",   color: "bg-destructive/10 text-destructive",    icon: Shield },
   teacher: { label: "Teacher", color: "bg-purple-500/10 text-purple-600", icon: BookOpen },
   student: { label: "Student", color: "bg-primary/10 text-primary",  icon: GraduationCap },
   parent:  { label: "Parent",  color: "bg-green-500/10 text-green-600", icon: User },
+=======
+  admin:   { label: "Admin",   color: "bg-red-100 text-red-700",    icon: Shield },
+  teacher: { label: "Teacher", color: "bg-purple-100 text-purple-700", icon: BookOpen },
+  student: { label: "Student", color: "bg-blue-100 text-blue-700",  icon: GraduationCap },
+  parent:  { label: "Parent",  color: "bg-green-100 text-green-700", icon: User },
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
 };
 
 const ROLES = ["student", "teacher", "parent", "admin"] as const;
@@ -264,11 +271,19 @@ export default function AdminUsers() {
 
         {/* Users table */}
         {isLoading ? (
+<<<<<<< HEAD
           <div className="space-y-2">{[...Array(8)].map((_, i) => <div key={i} className="h-14 bg-muted rounded-lg animate-pulse" />)}</div>
         ) : filtered.length === 0 ? (
           <Card>
             <CardContent className="py-16 text-center">
               <Users className="w-12 h-12 text-muted mx-auto mb-3" />
+=======
+          <div className="space-y-2">{[...Array(8)].map((_, i) => <div key={i} className="h-14 bg-gray-100 rounded-lg animate-pulse" />)}</div>
+        ) : filtered.length === 0 ? (
+          <Card>
+            <CardContent className="py-16 text-center">
+              <Users className="w-12 h-12 text-gray-300 mx-auto mb-3" />
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
               <p className="text-muted-foreground text-sm">No users found</p>
               <Button size="sm" className="mt-3 gap-1.5" onClick={() => setShowCreate(true)}>
                 <Plus className="w-3.5 h-3.5" /> Create first user
@@ -278,7 +293,11 @@ export default function AdminUsers() {
         ) : (
           <Card>
             <div className="divide-y">
+<<<<<<< HEAD
               <div className="grid grid-cols-12 gap-3 px-4 py-2.5 text-xs font-semibold text-muted-foreground bg-muted/30 rounded-t-xl">
+=======
+              <div className="grid grid-cols-12 gap-3 px-4 py-2.5 text-xs font-semibold text-muted-foreground bg-gray-50/80 rounded-t-xl">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                 <div className="col-span-4">User</div>
                 <div className="col-span-3 hidden sm:block">Email</div>
                 <div className="col-span-2">Role</div>
@@ -288,7 +307,11 @@ export default function AdminUsers() {
               {filtered.map(u => {
                 const cfg = ROLE_CONFIG[u.role] ?? ROLE_CONFIG.student;
                 return (
+<<<<<<< HEAD
                   <div key={u.id} className="grid grid-cols-12 gap-3 px-4 py-3 items-center hover:bg-muted/40 transition-colors">
+=======
+                  <div key={u.id} className="grid grid-cols-12 gap-3 px-4 py-3 items-center hover:bg-gray-50/60 transition-colors">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                     <div className="col-span-4 flex items-center gap-2 min-w-0">
                       <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs shrink-0">
                         {u.name.charAt(0).toUpperCase()}
@@ -312,7 +335,11 @@ export default function AdminUsers() {
                         <Pencil className="w-3.5 h-3.5" />
                       </Button>
                       {u.id !== me?.id && (
+<<<<<<< HEAD
                         <Button size="icon" variant="ghost" className="w-7 h-7 text-destructive hover:text-destructive hover:bg-destructive/10" onClick={() => handleDelete(u)}>
+=======
+                        <Button size="icon" variant="ghost" className="w-7 h-7 text-red-400 hover:text-red-600 hover:bg-red-50" onClick={() => handleDelete(u)}>
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                           <Trash2 className="w-3.5 h-3.5" />
                         </Button>
                       )}

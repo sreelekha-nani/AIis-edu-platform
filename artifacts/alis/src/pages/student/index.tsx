@@ -100,6 +100,7 @@ export default function StudentDashboard() {
                 ) : aiData ? (
                   <div className="space-y-4">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+<<<<<<< HEAD
                       <div className="bg-background p-3 rounded-xl border border-border/60 shadow-sm">
                         <p className="text-xs text-muted-foreground mb-1 font-medium">Style</p>
                         <p className="font-semibold text-sm">{aiData.learningStyle}</p>
@@ -113,6 +114,21 @@ export default function StudentDashboard() {
                         <p className="font-semibold text-sm truncate">{aiData.strongSubjects?.slice(0,2).join(", ")}</p>
                       </div>
                       <div className="bg-background p-3 rounded-xl border border-border/60 shadow-sm">
+=======
+                      <div className="bg-white p-3 rounded-xl border border-border/60 shadow-sm">
+                        <p className="text-xs text-muted-foreground mb-1 font-medium">Style</p>
+                        <p className="font-semibold text-sm">{aiData.learningStyle}</p>
+                      </div>
+                      <div className="bg-white p-3 rounded-xl border border-border/60 shadow-sm">
+                        <p className="text-xs text-muted-foreground mb-1 font-medium">Speed</p>
+                        <p className="font-semibold text-sm">{aiData.learningSpeed}</p>
+                      </div>
+                      <div className="bg-white p-3 rounded-xl border border-border/60 shadow-sm">
+                        <p className="text-xs text-muted-foreground mb-1 font-medium">Strong In</p>
+                        <p className="font-semibold text-sm truncate">{aiData.strongSubjects?.slice(0,2).join(", ")}</p>
+                      </div>
+                      <div className="bg-white p-3 rounded-xl border border-border/60 shadow-sm">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
                         <p className="text-xs text-muted-foreground mb-1 font-medium">Engagement</p>
                         <p className="font-semibold text-sm text-primary">{aiData.engagementScore}/100</p>
                       </div>

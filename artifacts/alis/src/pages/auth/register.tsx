@@ -45,18 +45,32 @@ export default function RegisterPage() {
   }
 
   return (
+<<<<<<< HEAD
     <div className="min-h-screen flex items-center justify-center bg-background px-4 py-12">
       <div className="w-full max-w-md bg-card rounded-2xl shadow-xl border border-border p-8">
+=======
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4 py-12">
+      <div className="w-full max-w-md bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
         <div className="flex flex-col items-center mb-8">
           <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
             <BrainCircuit className="w-6 h-6" />
           </div>
+<<<<<<< HEAD
           <h1 className="text-2xl font-bold font-outfit text-foreground">Join ALIS</h1>
           <p className="text-muted-foreground mt-2">Create your account to start learning</p>
         </div>
 
         {error && (
           <div className="mb-6 p-3 bg-destructive/10 text-destructive rounded-lg text-sm">
+=======
+          <h1 className="text-2xl font-bold font-outfit text-gray-900">Join ALIS</h1>
+          <p className="text-gray-500 mt-2">Create your account to start learning</p>
+        </div>
+
+        {error && (
+          <div className="mb-6 p-3 bg-red-50 text-red-600 rounded-lg text-sm">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
             {error}
           </div>
         )}
@@ -145,7 +159,11 @@ export default function RegisterPage() {
           </form>
         </Form>
 
+<<<<<<< HEAD
         <div className="mt-6 text-center text-sm text-muted-foreground">
+=======
+        <div className="mt-6 text-center text-sm text-gray-500">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
           Already have an account?{" "}
           <Link href="/login" className="text-primary font-medium hover:underline">
             Sign in

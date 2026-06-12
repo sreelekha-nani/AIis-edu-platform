@@ -59,7 +59,11 @@ function NavLinks({ role, location, onClick }: { role: Role; location: string; o
             className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
               active
                 ? "bg-primary text-primary-foreground"
+<<<<<<< HEAD
                 : "text-sidebar-foreground/70 hover:bg-white/10 hover:text-white"
+=======
+                : "text-sidebar-accent-foreground hover:bg-white/10 hover:text-white"
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
             }`}
           >
             <Icon className="w-4 h-4 shrink-0" />
@@ -138,7 +142,11 @@ export function DashboardLayout({ children, role }: { children: React.ReactNode;
   );
 
   return (
+<<<<<<< HEAD
     <div className="flex h-screen bg-background overflow-hidden font-sans">
+=======
+    <div className="flex h-screen bg-gray-50 overflow-hidden font-sans">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
       {/* Desktop Sidebar */}
       <aside className="w-60 bg-sidebar text-sidebar-foreground hidden md:flex flex-col shrink-0">
         <Sidebar />
@@ -171,10 +179,17 @@ export function DashboardLayout({ children, role }: { children: React.ReactNode;
       {/* Main Content */}
       <main className="flex-1 flex flex-col min-w-0 overflow-hidden">
         {/* Mobile Header */}
+<<<<<<< HEAD
         <header className="h-14 border-b border-border bg-background/80 backdrop-blur-md flex items-center justify-between px-4 sticky top-0 z-30 md:hidden shrink-0">
           <button
             onClick={() => setMobileOpen(true)}
             className="p-2 rounded-lg hover:bg-accent transition-colors"
+=======
+        <header className="h-14 border-b border-border bg-white flex items-center justify-between px-4 sticky top-0 z-30 md:hidden shrink-0">
+          <button
+            onClick={() => setMobileOpen(true)}
+            className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
           >
             <Menu className="w-5 h-5" />
           </button>
@@ -183,12 +198,20 @@ export function DashboardLayout({ children, role }: { children: React.ReactNode;
             ALIS
           </div>
           <div className="flex items-center gap-1">
+<<<<<<< HEAD
             <Link href="/" className="p-2 rounded-lg hover:bg-accent transition-colors text-muted-foreground">
+=======
+            <Link href="/" className="p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-500">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
               <Home className="w-4 h-4" />
             </Link>
             <button
               onClick={() => logout()}
+<<<<<<< HEAD
               className="p-2 rounded-lg hover:bg-accent transition-colors text-muted-foreground"
+=======
+              className="p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-500"
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
             >
               <LogOut className="w-4 h-4" />
             </button>
@@ -196,7 +219,11 @@ export function DashboardLayout({ children, role }: { children: React.ReactNode;
         </header>
 
         {/* Desktop Header bar */}
+<<<<<<< HEAD
         <header className="hidden md:flex h-12 border-b border-border bg-background items-center justify-between px-6 sticky top-0 z-20 shrink-0">
+=======
+        <header className="hidden md:flex h-12 border-b border-border bg-white items-center justify-between px-6 sticky top-0 z-20 shrink-0">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
           <div className="flex items-center gap-2 text-xs text-muted-foreground">
             <span className="capitalize font-medium text-foreground">{roleLabel} Portal</span>
             <ChevronRight className="w-3 h-3" />
@@ -212,7 +239,11 @@ export function DashboardLayout({ children, role }: { children: React.ReactNode;
           </div>
         </header>
 
+<<<<<<< HEAD
         <div className="flex-1 overflow-y-auto bg-background text-foreground">
+=======
+        <div className="flex-1 overflow-y-auto">
+>>>>>>> d2d5346de3679531ff816bc58f47ca15715413e4
           <div className="p-5 md:p-8 max-w-7xl mx-auto w-full">
             {children}
           </div>
