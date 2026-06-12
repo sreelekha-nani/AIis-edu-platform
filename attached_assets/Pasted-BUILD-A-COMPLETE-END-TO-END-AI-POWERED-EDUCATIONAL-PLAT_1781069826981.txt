@@ -1,0 +1,521 @@
+BUILD A COMPLETE END-TO-END AI-POWERED EDUCATIONAL PLATFORM CALLED:
+
+# ALIS – Adaptive Learning Intelligence System
+
+## PROJECT VISION
+
+Traditional education follows a one-size-fits-all teaching approach.
+
+Every student learns differently.
+
+Some students understand through videos.
+Some learn through practice.
+Some require additional explanations.
+Some learn faster while others need personalized support.
+
+ALIS (Adaptive Learning Intelligence System) is an AI-powered adaptive learning platform that analyzes student learning behavior, strengths, weaknesses, engagement, quiz performance, learning speed, and learning style to provide personalized educational experiences.
+
+The platform should function as a complete AI-powered Learning Management System (LMS) with adaptive learning capabilities.
+
+---
+
+MAIN OBJECTIVE
+
+Build a fully functional, hackathon-ready, production-quality platform including:
+
+✓ Landing Page
+✓ Authentication
+✓ Student Dashboard
+✓ Teacher Dashboard
+✓ Parent Dashboard
+✓ Admin Dashboard
+✓ Course Management
+✓ YouTube Video Learning
+✓ Live Classes
+✓ Online Tests
+✓ AI Recommendations
+✓ Analytics
+✓ Discussion Forum
+✓ Classroom Interaction
+✓ Progress Tracking
+✓ Demo Data
+✓ Deployment Ready
+
+---
+
+LANDING PAGE
+
+Create a modern educational homepage.
+
+Sections:
+
+1. Hero Section
+
+* ALIS Logo
+* Attractive Educational Illustration
+* Title:
+  Learn Smarter. Learn Better. Learn with ALIS.
+* Description
+* Get Started Button
+* Login Button
+
+2. About ALIS
+
+Explain:
+ALIS uses Artificial Intelligence to personalize education for every student.
+
+3. Features Section
+
+Feature Cards:
+
+* AI Student Analysis
+* Personalized Learning
+* Smart Recommendations
+* YouTube Learning
+* Live Classes
+* Online Courses
+* Online Assessments
+* Discussion Forums
+* Parent Monitoring
+* Teacher Analytics
+* Career Guidance
+* Progress Tracking
+
+4. How ALIS Works
+
+Student Learns
+→ Takes Assessments
+→ AI Analyzes Performance
+→ Recommendations Generated
+→ Learning Improves
+
+5. Benefits Section
+
+6. Contact Section
+
+7. Footer
+
+---
+
+AUTHENTICATION
+
+Role-Based Authentication
+
+Roles:
+
+1. Student
+2. Teacher
+3. Parent
+4. Admin
+
+Features:
+
+* Registration
+* Login
+* Logout
+* Password Security
+* Protected Routes
+* Role-Based Access Control
+
+---
+
+STUDENT DASHBOARD
+
+Features:
+
+* Profile
+* Enrolled Courses
+* Recommended Courses
+* Learning Progress
+* Upcoming Classes
+* Upcoming Tests
+* Assignments
+* AI Recommendations
+* Discussion Access
+* Analytics
+
+AI PROFILE
+
+Display:
+
+* Learning Style
+* Learning Speed
+* Strong Subjects
+* Weak Subjects
+* Completion Rate
+* Engagement Score
+
+Recommendations:
+
+* Recommended Courses
+* Improvement Suggestions
+* Revision Plans
+* Practice Suggestions
+
+---
+
+TEACHER DASHBOARD
+
+Features:
+
+* Create Courses
+* Edit Courses
+* Delete Courses
+* Upload Notes
+* Upload PDFs
+* Add YouTube Videos
+* Create Assignments
+* Create Quizzes
+* Schedule Live Classes
+* View Student Analytics
+
+---
+
+PARENT DASHBOARD
+
+Features:
+
+* Child Progress
+* Attendance
+* Scores
+* Performance Reports
+* AI Insights
+* Teacher Feedback
+
+---
+
+ADMIN DASHBOARD
+
+Features:
+
+* Manage Students
+* Manage Teachers
+* Manage Parents
+* Manage Courses
+* Manage Tests
+* Manage Live Classes
+* Platform Analytics
+* Reports
+
+---
+
+COURSE MANAGEMENT SYSTEM
+
+Support:
+
+* School
+* Intermediate
+* Degree
+* Higher Education
+* Competitive Exams
+
+Course Features:
+
+* Course List
+* Course Details
+* Chapters
+* Lessons
+* Videos
+* Notes
+* PDFs
+* Assignments
+* Quizzes
+
+---
+
+YOUTUBE VIDEO LEARNING SYSTEM
+
+Implement complete YouTube Learning Integration.
+
+Teacher Features:
+
+* Add YouTube Video URL
+* Edit YouTube Videos
+* Organize Videos into Chapters
+* Create Learning Modules
+
+Student Features:
+
+* Open Course
+* Open Lesson
+* Watch Video Directly Inside Platform
+* Embedded YouTube Player
+* View Notes Below Video
+* Mark Lesson Completed
+
+Requirements:
+
+* Use Embedded YouTube iframe player
+* Videos should play directly inside ALIS
+* No redirection outside platform
+* Save Learning Progress
+
+Create Demo Courses With Sample Videos:
+
+1. Python Programming
+2. Data Science Basics
+3. Artificial Intelligence
+4. Mathematics
+5. Physics
+6. Chemistry
+7. Biology
+8. English Communication
+
+---
+
+LIVE CLASSES MODULE
+
+Teacher:
+
+* Schedule Live Class
+* Class Title
+* Subject
+* Description
+* Date
+* Time
+* Duration
+* Meeting Link
+
+Student:
+
+* View Live Classes
+* Join Class Button
+* Class Schedule
+
+Parent:
+
+* View Child Live Classes
+
+Admin:
+
+* Manage All Live Classes
+
+---
+
+ONLINE TEST SYSTEM
+
+Features:
+
+* MCQ Exams
+* Timers
+* Auto Evaluation
+* Instant Results
+* Result History
+* Subject Analysis
+* Test Analytics
+
+---
+
+DISCUSSION FORUM
+
+Features:
+
+* Ask Questions
+* Answer Questions
+* Like Responses
+* Search Discussions
+* Subject Categories
+
+---
+
+CLASSROOM INTERACTION SYSTEM
+
+Features:
+
+* Raise Hand Button
+* Ask Doubts
+* Teacher Responses
+* Teacher Announcements
+* Student Discussions
+* Class Comments
+
+---
+
+AI LEARNING INTELLIGENCE ENGINE (MAIN USP)
+
+Create a rule-based AI recommendation engine.
+
+Analyze:
+
+* Quiz Scores
+* Subject Performance
+* Attendance
+* Learning Activity
+* Test Results
+* Course Completion
+
+Generate:
+
+* Learning Style
+* Strong Subjects
+* Weak Subjects
+* Personalized Feedback
+* Recommended Courses
+* Improvement Suggestions
+
+Example:
+
+Learning Style:
+Visual Learner
+
+Strong Subjects:
+Science
+
+Weak Subjects:
+Mathematics
+
+Recommendation:
+Practice Algebra 20 minutes daily.
+
+---
+
+ANALYTICS DASHBOARD
+
+Use Chart.js
+
+Display:
+
+* Progress Graphs
+* Performance Trends
+* Attendance Analysis
+* Completion Rates
+* Subject Analysis
+* Test Performance
+
+---
+
+DEMO DATA
+
+Automatically Create:
+
+* 20 Students
+* 5 Teachers
+* 10 Parents
+* 10 Courses
+* 50 Lessons
+* 20 Tests
+* Live Classes
+* Discussion Posts
+* AI Recommendations
+
+---
+
+UI DESIGN
+
+Theme:
+Modern EdTech Platform
+
+Colors:
+
+Primary:
+#2563EB
+
+Secondary:
+#0EA5E9
+
+Accent:
+#14B8A6
+
+Requirements:
+
+* Mobile Responsive
+* Beautiful Landing Page
+* Professional Dashboards
+* Sidebar Navigation
+* Modern Cards
+* Smooth Animations
+* Clean User Experience
+
+---
+
+ERROR PREVENTION
+
+Before Completion:
+
+* Fix all 404 Errors
+* Fix Broken Routes
+* Fix Broken Links
+* Fix URL Errors
+* Fix Template Errors
+* Fix Database Errors
+
+Verify:
+
+✓ Landing Page Works
+✓ Registration Works
+✓ Login Works
+✓ Student Dashboard Works
+✓ Teacher Dashboard Works
+✓ Parent Dashboard Works
+✓ Admin Dashboard Works
+✓ Courses Work
+✓ YouTube Videos Play
+✓ Live Classes Work
+✓ Tests Work
+✓ Analytics Work
+✓ Discussion Forum Works
+
+No page should return 404.
+
+---
+
+TECH STACK
+
+Backend:
+Django
+
+Frontend:
+HTML
+CSS
+Bootstrap 5
+JavaScript
+
+Database:
+SQLite
+
+Charts:
+Chart.js
+
+Authentication:
+Django Authentication
+
+---
+
+FINAL EXECUTION
+
+Do not stop after generating code.
+
+Continue until:
+
+1. All features are implemented.
+2. All pages work.
+3. All dashboards work.
+4. YouTube videos play successfully.
+5. Live Classes work.
+6. Discussion Forums work.
+7. AI Recommendations work.
+8. Database is configured.
+9. Demo data is loaded.
+10. Application runs successfully.
+11. Preview runs successfully.
+
+After completion:
+
+* Run migrations
+* Fix all errors
+* Test all pages
+* Verify all functionality
+* Deploy application
+* Generate public live URL
+* Test live URL
+
+Finally provide:
+
+* Live URL
+* Admin Credentials
+* Teacher Credentials
+* Student Credentials
+* Parent Credentials
+* Project Summary
+
+Build a complete working hackathon-ready Adaptive Learning Intelligence System demonstrating AI-powered personalized learning and intelligent education.
