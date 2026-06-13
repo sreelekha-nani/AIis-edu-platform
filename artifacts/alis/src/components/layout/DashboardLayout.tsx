@@ -26,6 +26,7 @@ function getLinks(role: Role) {
       { href: "/teacher", label: "Dashboard", icon: LayoutDashboard },
       { href: "/teacher/courses", label: "Courses", icon: Book },
       { href: "/teacher/tests", label: "Tests", icon: PenTool },
+      { href: "/teacher/assignments", label: "Assignments", icon: ClipboardList },
       { href: "/teacher/live-classes", label: "Live Classes", icon: PlaySquare },
       { href: "/teacher/students", label: "Students", icon: User },
       { href: "/teacher/analytics", label: "Analytics", icon: LineChart },

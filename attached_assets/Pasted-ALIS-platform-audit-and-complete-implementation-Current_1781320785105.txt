@@ -1,0 +1,325 @@
+ALIS platform audit and complete implementation.
+
+Current Situation:
+
+Authentication works.
+Student, Teacher and Parent dashboards open.
+
+However major issues still exist:
+
+1. Parent dashboard mostly empty.
+2. Parent-child relationships missing.
+3. Teacher dashboard analytics mostly empty.
+4. Courses contain little or no meaningful content.
+5. Assessments contain insufficient data.
+6. Student interactions are missing.
+7. Live class links are broken.
+8. Attend Class button does not open actual class.
+9. Zoom/Google Meet links are not handled correctly.
+10. Some routes still show 404 errors.
+11. Several dashboard sections still appear empty.
+12. Adaptive learning features are incomplete.
+
+==================================================
+CRITICAL BUG FIXES
+==================================================
+
+LIVE CLASSES
+
+Fix all live class functionality.
+
+Requirements:
+
+- Attend Class must work.
+- Join Class must work.
+- Zoom links must open in a new browser tab.
+- Google Meet links must open in a new browser tab.
+- External URLs must never be treated as React routes.
+- Remove all 404 errors caused by meeting links.
+- Validate every meeting link before display.
+- Add fallback handling for invalid links.
+
+Test all live class buttons after implementation.
+
+==================================================
+PARENT DASHBOARD
+==================================================
+
+Create realistic parent ecosystem.
+
+Create:
+
+10 Parents
+20 Students
+
+Link every student to a parent.
+
+Parent dashboard must show:
+
+- Child name
+- Child profile
+- Courses enrolled
+- Progress %
+- Assessment scores
+- Attendance
+- Recommendations
+- Reports
+- Weak subjects
+- Strong subjects
+
+No parent page should be empty.
+
+==================================================
+TEACHER DASHBOARD
+==================================================
+
+Create:
+
+5 Teachers
+
+Assign students to teachers.
+
+Populate:
+
+- Student count
+- Courses taught
+- Tests created
+- Assignments
+- Live classes
+- Analytics
+- Charts
+- Performance reports
+
+No teacher page should be empty.
+
+==================================================
+STUDENT DASHBOARD
+==================================================
+
+Create complete student learning experience.
+
+Features:
+
+- Course search
+- Course recommendations
+- Trending courses
+- Continue learning
+- Progress tracking
+- Assignments
+- Assessments
+- Discussion forum
+- Live classes
+- Analytics
+
+==================================================
+COURSES
+==================================================
+
+Create 12 complete courses:
+
+1. Python Programming
+2. Data Science
+3. Artificial Intelligence
+4. Machine Learning
+5. DBMS
+6. Web Development
+7. Java Programming
+8. Mathematics
+9. Physics
+10. Chemistry
+11. Biology
+12. English Communication
+
+Each course must contain:
+
+- Description
+- Instructor
+- Difficulty Level
+- Beginner track
+- Intermediate track
+- Advanced track
+- Modules
+- Lessons
+- Notes
+- Assignments
+- Assessments
+- Resources
+
+==================================================
+YOUTUBE INTEGRATION
+==================================================
+
+For every course:
+
+Embed educational YouTube videos.
+
+Requirements:
+
+- Embedded player
+- Playlist
+- Recommended videos
+- Course-specific videos
+
+Examples:
+
+Python → Python tutorials
+AI → AI tutorials
+DBMS → DBMS tutorials
+Data Science → Data Science tutorials
+
+Videos must actually display and play.
+
+==================================================
+ADAPTIVE LEARNING
+==================================================
+
+Support:
+
+- Beginner
+- Intermediate
+- Advanced
+
+Recommendations must change according to level.
+
+Example:
+
+Beginner:
+- Easy videos
+- Easy quizzes
+
+Intermediate:
+- Moderate content
+
+Advanced:
+- Projects
+- Advanced assessments
+
+==================================================
+ASSESSMENTS
+==================================================
+
+Generate:
+
+20 assessments
+
+Include:
+
+- Questions
+- Answers
+- Scores
+- Results
+- Analytics
+
+==================================================
+ASSIGNMENTS
+==================================================
+
+Generate:
+
+30 assignments
+
+Include:
+
+- Deadlines
+- Submissions
+- Grades
+- Teacher feedback
+
+==================================================
+DISCUSSION FORUM
+==================================================
+
+Generate:
+
+50 discussion posts
+100 replies
+
+Students can:
+
+- Ask doubts
+- Reply
+- Like posts
+
+Teachers can:
+
+- Answer questions
+- Moderate discussions
+
+==================================================
+ANALYTICS
+==================================================
+
+Populate all dashboards with realistic analytics.
+
+Student:
+- Progress
+- Study hours
+- Completion rate
+
+Teacher:
+- Course engagement
+- Student performance
+
+Parent:
+- Child performance
+
+Admin:
+- Platform statistics
+
+==================================================
+ADMIN DASHBOARD
+==================================================
+
+Populate:
+
+- Total users
+- Students
+- Teachers
+- Parents
+- Courses
+- Assessments
+- Assignments
+- Live classes
+- Analytics
+
+==================================================
+VALIDATION
+==================================================
+
+Before completion:
+
+1. Run application.
+2. Test Student role.
+3. Test Teacher role.
+4. Test Parent role.
+5. Test Admin role.
+6. Test course pages.
+7. Test YouTube videos.
+8. Test assessments.
+9. Test assignments.
+10. Test discussions.
+11. Test live classes.
+12. Test Attend Class button.
+13. Remove all 404 routes.
+14. Remove all empty dashboard sections.
+15. Verify no page is empty.
+
+==================================================
+FINAL OUTPUT
+==================================================
+
+Provide:
+
+- Demo credentials for all roles
+- Demo data summary
+- Number of students
+- Number of teachers
+- Number of parents
+- Number of courses
+- Number of assessments
+- Number of assignments
+- Number of live classes
+- Number of discussion posts
+- Modified files list
+
+Do not stop until the platform behaves like a complete educational LMS with meaningful demo content and working live classes.

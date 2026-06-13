@@ -78,4 +78,10 @@ router.get("/users/:id/children", async (req, res) => {
   res.json(children.map(safeUser));
 });
 
+router.get("/parent/:id/children", async (req, res) => {
+  const parentId = parseInt(req.params.id);
+  const children = await db.select().from(usersTable).where(eq(usersTable.parentId, parentId));
+  res.json(children.map(safeUser));
+});
+
 export default router;

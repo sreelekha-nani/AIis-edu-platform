@@ -23,6 +23,7 @@ import TeacherTests from "@/pages/teacher/tests";
 import TeacherLiveClasses from "@/pages/teacher/live-classes";
 import TeacherStudents from "@/pages/teacher/students";
 import TeacherAnalytics from "@/pages/teacher/analytics";
+import TeacherAssignments from "@/pages/teacher/assignments";
 
 import ParentDashboard from "@/pages/parent";
 import ParentChildren from "@/pages/parent/children";
@@ -63,6 +64,7 @@ function Router() {
       <Route path="/teacher/live-classes" component={() => <TeacherRoute component={TeacherLiveClasses} />} />
       <Route path="/teacher/students" component={() => <TeacherRoute component={TeacherStudents} />} />
       <Route path="/teacher/analytics" component={() => <TeacherRoute component={TeacherAnalytics} />} />
+      <Route path="/teacher/assignments" component={() => <TeacherRoute component={TeacherAssignments} />} />
 
       {/* Parent */}
       <Route path="/parent" component={() => <ParentRoute component={ParentDashboard} />} />

@@ -1,2 +1,3 @@
 - [API call patterns](api-call-patterns.md) — correct mutation/query signatures for all major hooks; many wrong patterns exist in older code
 - [Admin user management](admin-user-management.md) — useDeleteUser/useUpdateUser(role) now exist after OpenAPI spec update + codegen
+- [Parent children route alias](parent-children-alias.md) — API client calls /parent/:id/children but spec maps to /users/:id/children; both routes now exist in users.ts
